@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>PROJECT X</title>
+<script src="jquery-2.1.1.js"></script>
+</head>
+<body>
+<div height="100%" width="auto";>
+<img id="mario" height="400px;" width="auto" src="mario.png">
+</img>
+<script>
+var mario = $("#mario");
+$(document).mousemove(function( event ) {
+  mario.css({ 'margin-left': event.pageX, 'margin-top': event.pageY});
+});
+</script>
+</div>
+</body>
+</html>
